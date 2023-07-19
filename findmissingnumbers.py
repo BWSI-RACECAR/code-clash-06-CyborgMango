@@ -47,7 +47,7 @@ class Solution:
         if len(numbers)==0:
             return("Invalid input")
         else:
-            numslist=[numbers[0]]
+            numslist=[numbers.min()]
             for i in numbers:
                 if i>numslist[len(numslist)-1]:
                     numslist.append(i)
