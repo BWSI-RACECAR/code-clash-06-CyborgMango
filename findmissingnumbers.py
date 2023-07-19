@@ -49,9 +49,8 @@ class Solution:
         else:
             numslist=[min(numbers)]
             for i in [1]*len(numbers):
-                for i in numbers:
-                    if i>numslist[len(numslist)-1]:
-                        numslist.append(i)
+                numslist.append(min(numbers))
+                numbers.remove(min(numbers))
             iter=numslist[0]
             newnumslist=[]
             while iter<numslist[len(numslist)-1]:
