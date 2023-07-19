@@ -51,12 +51,12 @@ class Solution:
             for i in numbers:
                 if i>numslist[len(numslist)-1]:
                     numslist.append(i)
-            iter=numslist[len(numslist)-1]
+            iter=numslist[0]
             newnumslist=[]
-            while iter>numslist[0]:
+            while iter>numslist[len(numslist)-1]:
                 if iter not in numslist:
                     newnumslist.append(int(iter))
-                iter-=1
+                iter+=1
         if len(newnumslist)==0:
             return("None missing")
         else:
