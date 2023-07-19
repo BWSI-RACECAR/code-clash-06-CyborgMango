@@ -55,7 +55,7 @@ class Solution:
             newnumslist=[]
             while iter>numslist[0]:
                 if iter not in numslist:
-                    newnumslist.append(iter)
+                    newnumslist.append(string(iter))
                 iter-=1
         if len(newnumslist)==0:
             return("None missing")
