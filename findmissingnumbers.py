@@ -54,7 +54,7 @@ class Solution:
             iter=numslist[len(numslist)-1]
             newnumslist=[]
             while iter>numslist[0]:
-                if numslist.contains(iter)==False:
+                if iter not in numslist:
                     newnumslist.append(iter)
                 iter-=1
         if len(newnumslist)==0:
