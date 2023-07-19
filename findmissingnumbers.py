@@ -48,7 +48,7 @@ class Solution:
             return("Invalid input")
         else:
             for i in numbers:
-                i=round(i,1)
+                i=round(i)
             iter=min(numbers)
             newnumslist=[]
             while iter<max(numbers):
