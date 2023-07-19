@@ -47,8 +47,9 @@ class Solution:
         if len(numbers)==0:
             return("Invalid input")
         else:
+            for i in numbers:
+                i=round(i)
             numslist=[min(numbers)]
-            numbers=round(numbers)
             for i in [1]*len(numbers):
                 numslist.append(min(numbers))
                 numbers.remove(min(numbers))
