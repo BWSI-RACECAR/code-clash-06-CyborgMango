@@ -50,7 +50,7 @@ class Solution:
             for i in numbers:
                 i=round(i)
             numslist=[0]
-            iter=numslist[min(numbers)]
+            iter=min(numbers)
             newnumslist=[]
             while iter<max(numbers):
                 if iter not in numslist:
