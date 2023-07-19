@@ -48,9 +48,10 @@ class Solution:
             return("Invalid input")
         else:
             numslist=[min(numbers)]
-            for i in numbers:
-                if i>numslist[len(numslist)-1]:
-                    numslist.append(i)
+            for i in [1]*len(numbers):
+                for i in numbers:
+                    if i>numslist[len(numslist)-1]:
+                        numslist.append(i)
             iter=numslist[0]
             newnumslist=[]
             while iter<numslist[len(numslist)-1]:
