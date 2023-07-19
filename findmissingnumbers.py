@@ -49,12 +49,10 @@ class Solution:
         else:
             for i in numbers:
                 i=round(i)
-            for i in [numbers]:
-                numslist.append(min(numbers))
-                numbers.remove(min(numbers))
-            iter=numslist[0]
+            numslist=[0]
+            iter=numslist[min(numbers)]
             newnumslist=[]
-            while iter<numslist[len(numslist)-1]:
+            while iter<max(numbers):
                 if iter not in numslist:
                     newnumslist.append(int(iter))
                 iter+=1.0
