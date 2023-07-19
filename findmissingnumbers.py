@@ -47,11 +47,9 @@ class Solution:
         if len(numbers)==0:
             return("Invalid input")
         else:
-            abl=numbers
             for i in numbers:
                 i=round(i)
-            numslist=[min(numbers)]
-            for i in [abl]:
+            for i in [numbers]:
                 numslist.append(min(numbers))
                 numbers.remove(min(numbers))
             iter=numslist[0]
