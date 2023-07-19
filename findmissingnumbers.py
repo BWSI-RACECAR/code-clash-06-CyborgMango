@@ -53,7 +53,7 @@ class Solution:
                     numslist.append(i)
             iter=numslist[0]
             newnumslist=[]
-            while iter>numslist[len(numslist)-1]:
+            while iter<numslist[len(numslist)-1]:
                 if iter not in numslist:
                     newnumslist.append(int(iter))
                 iter+=1
