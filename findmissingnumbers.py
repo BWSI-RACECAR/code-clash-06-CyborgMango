@@ -48,8 +48,8 @@ class Solution:
         if len(numbers)==0:
             return("Invalid input")
         else:
-            for i in numbers:
-                i=round(i)
+            for i in range(len(numbers)):
+                numbers[i]=round(numbers[i])
             print(numbers)
             iter=min(numbers)
             newnumslist=[]
