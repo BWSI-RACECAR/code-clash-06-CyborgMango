@@ -50,6 +50,7 @@ class Solution:
         else:
             for i in numbers:
                 i=round(i)
+            print(numbers)
             iter=min(numbers)
             newnumslist=[]
             while iter<=max(numbers):
