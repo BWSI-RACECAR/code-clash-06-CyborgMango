@@ -52,7 +52,7 @@ class Solution:
                 i=round(i)
             iter=min(numbers)
             newnumslist=[]
-            while iter<max(numbers):
+            while iter<=max(numbers):
                 if iter not in numbers:
                     newnumslist.append(int(iter))
                 iter+=1.0
